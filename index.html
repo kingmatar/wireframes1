@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section1">
+        <h1 id="titre">Ajout prof</h1>
+        <form action="">
+            <label class="write" for="nom & prenom">Nom et Prenom</label><br>
+            <input class="text1" type="text"><br>
+
+            <label class="write" for="grade">Grade</label><br>
+            <input class="text1" type="text"><br>
+
+            <label class="write" for="module">module</label><br>
+            <input class="module" type="checkbox"><span>Python</span><br> 
+            <input class="module" type="checkbox">Php<br>
+            <input class="module" type="checkbox">SGBD<br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+    </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Lister Prof</h1>
+        <table>
+            <tr>
+                <td>matricule</td>
+                <td>nom et prenom</td>
+                <td>Guide</td>
+                <td>module</td>
+                <td>Classe</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Creer Classe</h1>
+        <form action="">
+            <label class="write" for="">filiere</label><br>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value="">GLRS</option>
+                <option value="">ETSE</option>
+                <option value="">TTL</option>
+                <option value="">LIAGE</option>
+            </select><br>
+
+            <label class="write" for="">Niveau</label><br>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value="">Licence1</option>
+                <option value="">Licence2</option>
+                <option value="">Licence3</option>
+            </select><br>
+
+            <label class="write" for="grade">libelle</label><br>
+            <input class="text1" type="text"><br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Lister Classe</h1>
+        <table>
+            <tr>
+                <td>libelle</td>
+                <td>filiere</td>
+                <td>Niveau</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Demande de suppression</h1>
+        <form action="">
+            <label class="write" for="">Motif</label>
+            <input id="motif" type="text"><br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Lister les Demandes d'un etudiant</h1>
+        <table>
+            <tr>
+                <td>Date</td>
+                <td>Motif</td>
+                <td>statut</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Lister les Demandes de tous les etudiants</h1>
+        <table>
+            <tr>
+                <td>matricule</td>
+                <td>nom/prenom</td>
+                <td>Date</td>
+                <td>motif</td>
+                <td>Classe</td>
+                <td>statut</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <form action="">
+            <label for="">date</label>
+            <input type="date">
+            </select>
+            <label for="">statut</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+            </select>
+            <label for="">matricule</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+            </select>
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Traitement des Demandes</h1>
+        <table>
+            <tr>
+                <td>Traitement</td>
+                <td>matricule</td>
+                <td>nom/prenom</td>
+                <td>date</td>
+                <td>motif</td>
+                <td>Classe</td>
+                <td>statut</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="A" class="module" type="checkbox">A
+                    <input id="B" class="module" type="checkbox">B
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="A" class="module" type="checkbox">A
+                    <input id="B" class="module" type="checkbox">B
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="A" class="module" type="checkbox">A
+                    <input id="B" class="module" type="checkbox">B
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="A" class="module" type="checkbox">A
+                    <input id="B" class="module" type="checkbox">B
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <form action="">
+            <label for="">date</label>
+            <input type="date"><br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Inscription</h1>
+        <form action="">
+            <label class="write" for="nom & prenom">Annee scolaire</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="nom & prenom">Nom et prenom</label><br>
+            <input class="text1" type="text"><br>
+
+            <label class="write" for="">Date de naissance</label><br>
+            <input class="text1" type="date"><br>
+
+            <label class="write" for="">Adresse</label><br>
+            <input class="text1" type="text"><br>
+
+            <label class="write" for="">Classe</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Reinscription</h1>
+        <form action="">
+            <label class="write" for="">Matricule</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="">Nom et Prenom</label><br>
+            <input class="text1" type="text"><br>
+
+            <label class="write" for="">Date de naissance</label><br>
+            <input class="text1" type="date"><br>
+
+            <label class="write" for="nom & prenom">Annee scolaire</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="">Classe</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">liste des etudiants</h1>
+        <form action="">
+            <label class="write" for="nom & prenom">Annee scolaire</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="">Classe</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+        </form>
+        <table>
+            <tr>
+                <td>Matricule</td>
+                <td>nom et prenom</td>
+                <td>date de naissance</td>
+                <td>Classe</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <hr id="trait" color="black">
+    <section>
+        <h1 id="titre">Affecter des Classes au prof</h1>
+        <form action="">
+            <label class="write" for="">Matricule</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="nom & prenom">Annee scolaire</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="">Grade</label><br>
+            <input class="text1" type="text"><br>
+
+            <h3 id="titre">lister classe</h3><br>
+            <label class="write" for="nom & prenom">Annee scolaire</label><br>
+            <input class="text1" type="number"><br>
+
+            <label class="write" for="">Semestre</label>
+            <select name="" id="">
+                <option value="">selectionner</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select><br>
+
+            <label class="write" for="">Classe</label>
+            <input id="A" class="module" type="checkbox">L2 CDSD
+            <input id="B" class="module" type="checkbox">L1 GLRS<br>
+
+            <input id="reset" type="reset">
+
+            <input id="submit" type="submit">
+        </form>
+    </section>
+</body>
+</html>
